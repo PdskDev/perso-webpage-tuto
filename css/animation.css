@@ -98,42 +98,53 @@
 
 .contact {
     animation-name: bounceIn;
-     animation-delay: 700ms;
+    animation-delay: 700ms;
 }
 
 .wallpaper {
-   animation-name: zoomOut;
+   /*animation-name: zoomOut;*/
    animation-timing-function: ease-out;
 }
 
-.picture-shadow {
-    animation-name: picShadow;
-     animation-delay: 600ms;
+.wallpaper.is-loaded {
+    animation-delay: 1s;
+    animation-name: zoomOut;
 }
 
+.picture.is-loaded .picture-shadow {
+    animation-name: picShadow;
+    animation-delay: 600ms;
+}
+
+.picture.is-loaded .picture-image {
+    animation-name: picImage;
+    animation-delay: 500ms;
+}
+
+.wallpaper,
+.picture-shadow,
 .picture-image {
-     animation-name: picImage;
-      animation-delay: 500ms;
+    opacity: 0;
 }
 
 .name {
    animation-name: slideDown;
-    animation-delay: 100ms;
+   animation-delay: 100ms;
 }
 
 .job {
    animation-name: slideUp;
-    animation-delay: 200ms;
+   animation-delay: 200ms;
 }
 
 .hr {
    animation-name: fillUp;
-    animation-delay: 300ms;
+   animation-delay: 300ms;
 }
 
 .description {
     animation-name: slideUp;
-     animation-delay: 400ms;
+    animation-delay: 400ms;
 }
 
 .social li {

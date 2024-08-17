@@ -8,13 +8,14 @@
     <link rel="stylesheet" type="text/css" href="css/minireset.mini.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <script defer type="text/javascript" src="js/main.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 </head>
 <body>
-   <div class="wallpaper"></div>
+   <div id="wallpaper" data-image="images/background.jpg" class="wallpaper"></div>
    <div class="content">
     <aside class="side">
-        <figure class="picture">
+        <figure id="picture" class="picture">
             <div class="picture-shadow"></div>
             <img id="pictureImage" class="picture-image" 
             src="images/dev.jpg" 
@@ -58,5 +59,16 @@
         </div>
     </main>
    </div>
+   <noscript>
+    <style text="text/css">
+        .wallpaper {
+            animation-name: zoomOut;
+        }
+
+        .picture {
+            animation-name: bouceIn;
+        }
+    </style>
+   </noscript>
 </body>
 </html>
