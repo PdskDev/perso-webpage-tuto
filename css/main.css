@@ -20,23 +20,8 @@ a {
 }
 
 /* 2. Shared */
-.wallpaper,
-.picture-shadow,
-.picture-image {
-    display: block;
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 100%;
-}
-
-/* 3. Specific */
-.wallpaper {
-    background-image: url("../images/background.jpg");
-    background-position: center;
-    background-size: cover;
-    opacity: 0.2;
-    position: fixed;
+.about {
+    max-width: 26rem;
 }
 
 .content {
@@ -45,13 +30,44 @@ a {
     min-height: 100vh;
 }
 
-.side {
-    max-height: 20rem;
-    max-width: 20rem;
+.contact {
+    display: inline-block;
+    margin-top: 1.5rem;
+    vertical-align: top;
 }
 
-.about {
-    max-width: 26rem;
+.description {
+    font-size: 1.5rem;
+}
+
+.hr {
+    background-color: #ff470f;
+    border: none;
+    content: "";
+    height: 1px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    transform-origin: center left;
+    width: 11rem;
+}
+
+.job,
+.button {
+    font-family: "Montserrat", "Quicksand", sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+
+.job {
+    color: #ffe479;
+    font-size: 0.75rem;
+}
+
+.name {
+    font-size: 1.75rem;
+    line-height: 1.125;
+    margin-bottom: 0.8rem;
 }
 
 .picture {
@@ -72,45 +88,22 @@ a {
     position: absolute;
 }
 
-.name {
-    font-size: 1.75rem;
-    line-height: 1.125;
-    margin-bottom: 0.8rem;
+.side {
+    max-height: 20rem;
+    max-width: 20rem;
 }
 
-.job,
-.button {
-    font-family: "Montserrat", "Quicksand", sans-serif;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
+.wallpaper,
+.picture-shadow,
+.picture-image {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
-
-.job {
-    color: #ffe479;
-    font-size: 0.75rem;
-}
-
-.hr {
-    background-color: #ff470f;
-    border: none;
-    content: "";
-    height: 1px;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
-    transform-origin: center left;
-    width: 11rem;
-}
-
-.description {
-    font-size: 1.5rem;
-}
-
-.contact {
-    display: inline-block;
-    margin-top: 1.5rem;
-    vertical-align: top;
-}
+/* 3. Specific */
 
 .button,
 .social a {
@@ -133,6 +126,14 @@ a {
     vertical-align: top;
     white-space: nowrap;
     will-change: box-shadow, transform;
+}
+
+.wallpaper {
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+    position: fixed;
 }
 
 .button:hover {
